@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: hsl(217, 54%, 11%);
+            min-width: 344px;
+            max-width: 1440px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 250px;
+            border-radius: 15px;
+        }
+        
+        h1 {
+            font-size: 1.2rem;
+            color: hsl(0, 0%, 100%);
+            /* text-align: left; */
+            padding-left: 10px;
+        }
+        
+        .main {
+            background-color: hsl(216, 50%, 16%);
+            border-radius: 15px;
+            margin: 2em;
+            padding: 1em;
+        }
+        
+        .text {
+            color: hsl(215, 51%, 70%);
+            /* text-align: left; */
+            display: flex;
+            font-size: 0.9rem;
+            padding-left: 10px;
+        }
+        
+        .balance {
+            color: hsl(178, 100%, 50%);
+            font-weight: bold;
+            display: flex;
+        }
+        
+        .time-left {
+            color: hsl(215, 51%, 70%);
+        }
+        
+        .author {
+            color: hsl(215, 51%, 70%);
+            /* text-align: left; */
+            display: flex;
+        }
+        
+        .name {
+            color: hsl(0, 0%, 100%);
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="./images/image-equilibrium.jpg" alt="">
+        <h1>Equilibrium #3429</h1>
+        <div class="text"> Our Equilibrium collection promotes balance and calm.</div>
+        <div class="balance"> 0.041 ETH</div>
+        <div class="time-left">3 days left</div>
+        <div class="author"> Creation of
+            <div class="name"> Jules Wyvern</div>
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </div>
+</body>
+
+</html>

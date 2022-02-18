@@ -20,56 +20,95 @@
             max-width: 1440px;
             margin: 0;
             padding: 0;
-        }
-        
-        img {
-            width: 250px;
-            border-radius: 15px;
+            color: white;
         }
         
         h1 {
             font-size: 1.2rem;
             color: hsl(0, 0%, 100%);
-            /* text-align: left; */
             padding-left: 10px;
         }
         
         .main {
             background-color: hsl(216, 50%, 16%);
             border-radius: 15px;
-            margin: 2em;
+            display: block;
+            margin: auto;
             padding: 1em;
+            max-width: 250px;
         }
         
         .text {
             color: hsl(215, 51%, 70%);
-            /* text-align: left; */
-            display: flex;
             font-size: 0.9rem;
             padding-left: 10px;
+            padding-bottom: 10px;
         }
         
-        .balance {
+        img {
+            width: 250px;
+            border-radius: 15px;
+            margin: auto;
+            padding: auto;
+        }
+        
+        hr {
+            margin: 10px;
+            
+        }
+        .flex-content{
+            border: 1px solid green;
+            display: flex;
+        }
+        .flex-content >* {
+            flex-grow: 1;
+        }
+        
+        .balance,
+        .balance img {
+            border: 1px solid yellow;
             color: hsl(178, 100%, 50%);
             font-weight: bold;
-            display: flex;
+            width: auto;
+        }
+        .balance img {
         }
         
         .time-left {
+            border: 1px solid red;
             color: hsl(215, 51%, 70%);
+            text-align: right;
+            margin: auto;
+        }
+        .flex-content-author{
+            display: flex;
+            border: 1px solid green;
+        }
+        .flex-content-author > * {
+            flex-grow: 1;
         }
         
         .author {
+            border: 1px solid yellow;
+            padding-top: 15px;
             color: hsl(215, 51%, 70%);
-            /* text-align: left; */
-            display: flex;
+            margin: auto;
+            padding: 0;
+            }
+        .author img {
+            width: 30px;
+            border: 1px solid white;
         }
         
         .name {
+            border: 1px solid red;
             color: hsl(0, 0%, 100%);
+            text-align: right;
+            margin: auto;
         }
         
         .attribution {
+            margin: 10px;
             font-size: 11px;
             text-align: center;
         }
@@ -85,10 +124,16 @@
         <img src="./images/image-equilibrium.jpg" alt="">
         <h1>Equilibrium #3429</h1>
         <div class="text"> Our Equilibrium collection promotes balance and calm.</div>
-        <div class="balance"> 0.041 ETH</div>
-        <div class="time-left">3 days left</div>
-        <div class="author"> Creation of
+        <div class="flex-content">
+            <div class="balance"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH
+            </div>
+            <div class="time-left">3 days left</div>
+        </div>
+        <hr>
+        <div class="flex-content-author">
+            <div class="author"> <img src="./images/image-avatar.png" alt=""> Creation of</div>
             <div class="name"> Jules Wyvern</div>
+            
         </div>
 
         <div class="attribution">

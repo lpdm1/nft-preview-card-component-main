@@ -16,23 +16,24 @@
         body {
             font-family: 'Outfit', sans-serif;
             background-color: hsl(217, 54%, 11%);
-            min-width: 344px;
-            max-width: 1440px;
+            /* min-width: 344px;
+            max-width: 1440px; */
             margin: 0;
             padding: 0;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
         
         h1 {
             font-size: 1.2rem;
             color: hsl(0, 0%, 100%);
-            padding-left: 10px;
         }
         
         .main {
             background-color: hsl(216, 50%, 16%);
             border-radius: 15px;
-            display: block;
             margin: auto;
             padding: 1em;
             max-width: 250px;
@@ -41,7 +42,6 @@
         .text {
             color: hsl(215, 51%, 70%);
             font-size: 0.9rem;
-            padding-left: 10px;
             padding-bottom: 10px;
         }
         
@@ -53,14 +53,13 @@
         }
         
         hr {
-            margin: 10px;
-            
+            margin: 10px;          
         }
-        .flex-content{
+        .flex-balance{
             border: 1px solid green;
             display: flex;
         }
-        .flex-content >* {
+        .flex-balance >* {
             flex-grow: 1;
         }
         
@@ -80,11 +79,11 @@
             text-align: right;
             margin: auto;
         }
-        .flex-content-author{
+        .flex-author{
             display: flex;
             border: 1px solid green;
         }
-        .flex-content-author > * {
+        .flex-author > * {
             flex-grow: 1;
         }
         
@@ -124,13 +123,12 @@
         <img src="./images/image-equilibrium.jpg" alt="">
         <h1>Equilibrium #3429</h1>
         <div class="text"> Our Equilibrium collection promotes balance and calm.</div>
-        <div class="flex-content">
-            <div class="balance"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH
-            </div>
+        <div class="flex-balance">
+            <div class="balance"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
             <div class="time-left">3 days left</div>
         </div>
         <hr>
-        <div class="flex-content-author">
+        <div class="flex-author">
             <div class="author"> <img src="./images/image-avatar.png" alt=""> Creation of</div>
             <div class="name"> Jules Wyvern</div>
             

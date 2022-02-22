@@ -9,127 +9,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: hsl(217, 54%, 11%);
-            /* min-width: 344px;
-            max-width: 1440px; */
-            margin: 0;
-            padding: 0;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-        
-        h1 {
-            font-size: 1.2rem;
-            color: hsl(0, 0%, 100%);
-        }
-        
-        .main {
-            background-color: hsl(216, 50%, 16%);
-            border-radius: 15px;
-            margin: auto;
-            padding: 1em;
-            max-width: 250px;
-        }
-        
-        .text {
-            color: hsl(215, 51%, 70%);
-            font-size: 0.9rem;
-            padding-bottom: 10px;
-        }
-        
-        img {
-            width: 250px;
-            border-radius: 15px;
-            margin: auto;
-            padding: auto;
-        }
-        
-        hr {
-            margin: 10px;          
-        }
-        .flex-balance{
-            border: 1px solid green;
-            display: flex;
-        }
-        .flex-balance >* {
-            flex-grow: 1;
-        }
-        
-        .balance,
-        .balance img {
-            border: 1px solid yellow;
-            color: hsl(178, 100%, 50%);
-            font-weight: bold;
-            width: auto;
-        }
-        .balance img {
-        }
-        
-        .time-left {
-            border: 1px solid red;
-            color: hsl(215, 51%, 70%);
-            text-align: right;
-            margin: auto;
-        }
-        .flex-author{
-            display: flex;
-            border: 1px solid green;
-        }
-        .flex-author > * {
-            flex-grow: 1;
-        }
-        
-        .author {
-            border: 1px solid yellow;
-            padding-top: 15px;
-            color: hsl(215, 51%, 70%);
-            margin: auto;
-            padding: 0;
-            }
-        .author img {
-            width: 30px;
-            border: 1px solid white;
-        }
-        
-        .name {
-            border: 1px solid red;
-            color: hsl(0, 0%, 100%);
-            text-align: right;
-            margin: auto;
-        }
-        
-        .attribution {
-            margin: 10px;
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <div class="main">
         <img src="./images/image-equilibrium.jpg" alt="">
         <h1>Equilibrium #3429</h1>
-        <div class="text"> Our Equilibrium collection promotes balance and calm.</div>
-        <div class="flex-balance">
-            <div class="balance"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
-            <div class="time-left">3 days left</div>
+        <p> Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price-container">
+            <div class="eth">
+                <img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
+            <div class="clock">
+                <img src="./images/icon-clock.svg" alt=""> 3 days left</div>
         </div>
-        <hr>
-        <div class="flex-author">
-            <div class="author"> <img src="./images/image-avatar.png" alt=""> Creation of</div>
+        <!-- <hr> -->
+        <div class="author-container">
+            <img src="./images/image-avatar.png" alt="">
+            <div class="author"> Creation of</div>
             <div class="name"> Jules Wyvern</div>
             
         </div>

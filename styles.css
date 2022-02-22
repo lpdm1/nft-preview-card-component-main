@@ -9,8 +9,6 @@
             color: hsl(0, 0%, 100%);
             display: flex;
             min-height: 100vh;
-            justify-content: center;
-            align-items: center;
         }
         
         h1 {
@@ -29,11 +27,7 @@
             width: 100%;
             border-radius: 10px;
         }
-        
-        /* hr {
-            margin: 10px;          
-        } */
-        
+
         .main {
             width: 250px;
             background-color: hsl(216, 50%, 16%);
@@ -46,31 +40,33 @@
         .price-container{
             display: flex;
             font-size: 0.9em;
-            padding-bottom: 10px;
-            
+            padding-bottom: 10px;            
         }
+
         .price-container img {
             font-weight: bold;
             width: auto ;
             padding-right: 5px;
             margin: auto;
-         }
-         .eth{
-            color: hsl(178, 100%, 50%);
-            display: flex;
-            margin: auto 0;
-            font-weight: 700;
-         }
-         .clock{
-            color: hsl(215, 51%, 70%);
-            display: flex;
-            margin: auto;   
-         }
+        }
+
+        .eth{
+        color: hsl(178, 100%, 50%);
+        display: flex;
+        margin: auto 0;
+        font-weight: 700;
+        }
+        
+        .clock{
+        color: hsl(215, 51%, 70%);
+        display: flex;
+        margin: auto;
+        }
 
         .author-container{
             padding: 10px 0;
             display: flex;
-            border-top: 1px solid gray;
+            border-top: 1px solid hsl(215, 51%, 70%);
         }
         .author-container img {
             width: 30px;

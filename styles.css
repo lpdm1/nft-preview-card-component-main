@@ -44,7 +44,6 @@
         }
         
         .price-container{
-            /* border: 1px solid green; */
             display: flex;
             font-size: 0.9em;
             padding-bottom: 10px;
@@ -57,17 +56,15 @@
             margin: auto;
          }
          .eth{
-            /* border: 1px solid red; */
             color: hsl(178, 100%, 50%);
             display: flex;
             margin: auto 0;
             font-weight: 700;
          }
          .clock{
-            /* border: 1px solid blue; */
             color: hsl(215, 51%, 70%);
             display: flex;
-            margin: auto;            
+            margin: auto;   
          }
 
         .author-container{
